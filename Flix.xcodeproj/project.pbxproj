@@ -14,6 +14,7 @@
 		5D1454F325D096AC00948A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1454F125D096AC00948A18 /* LaunchScreen.storyboard */; };
 		5D1454FE25D096AC00948A18 /* FlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1454FD25D096AC00948A18 /* FlixTests.swift */; };
 		5D14550925D096AC00948A18 /* FlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14550825D096AC00948A18 /* FlixUITests.swift */; };
+		5D7056C325D4DABF005D9CAE /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7056C225D4DABF005D9CAE /* MovieCell.swift */; };
 		5D72335725D39D8A00B121FA /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72335625D39D8A00B121FA /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5D14550425D096AC00948A18 /* FlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D14550825D096AC00948A18 /* FlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixUITests.swift; sourceTree = "<group>"; };
 		5D14550A25D096AC00948A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7056C225D4DABF005D9CAE /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		5D72335625D39D8A00B121FA /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				5D1454E825D096A900948A18 /* SceneDelegate.swift */,
 				5D72335625D39D8A00B121FA /* MoviesViewController.swift */,
 				5D1454EC25D096A900948A18 /* Main.storyboard */,
+				5D7056C225D4DABF005D9CAE /* MovieCell.swift */,
 				5D1454EF25D096AC00948A18 /* Assets.xcassets */,
 				5D1454F125D096AC00948A18 /* LaunchScreen.storyboard */,
 				5D1454F425D096AC00948A18 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				5D1454E725D096A900948A18 /* AppDelegate.swift in Sources */,
 				5D1454E925D096A900948A18 /* SceneDelegate.swift in Sources */,
+				5D7056C325D4DABF005D9CAE /* MovieCell.swift in Sources */,
 				5D72335725D39D8A00B121FA /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

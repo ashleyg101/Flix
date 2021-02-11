@@ -7,7 +7,26 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
+        let synopsis = movie["overview"] as! String
+        
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
+        //cell.textLabel!.text = "row: \(indexPath.row)"
+        
+        return cell
+    }
 
     @IBOutlet weak var tableView: UITableView!
    
@@ -15,7 +34,10 @@ class MoviesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         // Do any additional setup after loading the view.
         print("Hello")
         
@@ -30,6 +52,7 @@ class MoviesViewController: UIViewController {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
               self.movies = dataDictionary["results"] as! [[String:Any]]    // raw data retrieved from API
+              self.tableView.reloadData()
               print(dataDictionary)
             
               // TODO: Get the array of movies
