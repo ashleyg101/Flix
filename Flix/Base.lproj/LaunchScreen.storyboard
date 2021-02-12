@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="dOk-ln-2S4">
-                                <rect key="frame" x="138" y="307" width="138" height="139"/>
+                                <rect key="frame" x="113" y="260" width="138" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
