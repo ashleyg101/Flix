@@ -18,7 +18,7 @@ Flix is an app that allows users to browse movies that are currently playing fro
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="http://g.recordit.co/3N8qncnzhI.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
