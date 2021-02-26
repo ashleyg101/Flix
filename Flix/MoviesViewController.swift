@@ -44,7 +44,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         
         // additional setup after loading the view
-        print("Hello")
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -58,7 +57,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             
               self.movies = dataDictionary["results"] as! [[String:Any]]    // get array of movies from API
               self.tableView.reloadData()                                   // reload table view data
-              print(dataDictionary)                                         // display movies
+              print(dataDictionary)                                         // display movies in terminal
             
            }
         }
@@ -67,15 +66,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // preparation before navigation in storyboard-based application
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        print("loading up the details screen")
+        
+        // find selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for:cell)!
+        let movie = movies[indexPath.row]
+        
+        // pass selected movie to details viewcontroller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
     
 
 }
