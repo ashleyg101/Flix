@@ -10,6 +10,10 @@ import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
+   
+    var movies = [[String:Any]]()   // array of dictionaries
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
@@ -32,10 +36,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
-
-    @IBOutlet weak var tableView: UITableView!
-   
-    var movies = [[String:Any]]()   // array of dictionaries
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
            if let error = error {
               print(error.localizedDescription)
            } else if let data = data {
+            
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
               self.movies = dataDictionary["results"] as! [[String:Any]]    // get array of movies from API
