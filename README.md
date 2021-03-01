@@ -37,7 +37,8 @@ Encountered issues with sizing of movie posters in the Table View, not exact.
 
 ### App Walkthrough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="http://g.recordit.co/ABal7WRXf0.gif" width=250><br>
 
 ### Notes
 Encountered issues with size constraints of the Movie Grid Cells in the Collection View; the rightmost column gets cut off.
+Initially had issues with text-wrapping of movie synopsis and title in Movie Details View.
