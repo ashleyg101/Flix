@@ -18,7 +18,7 @@ Flix is an app that allows users to browse movies that are currently playing fro
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-<img src="http://g.recordit.co/3N8qncnzhI.gif" width=250><br>
+<img src="http://g.recordit.co/FQbthDrhhD.gif" width=250><br>
 
 ### Notes
 Encountered issues with sizing of movie posters in the Table View, not exact.
@@ -37,7 +37,7 @@ Encountered issues with sizing of movie posters in the Table View, not exact.
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/ABal7WRXf0.gif" width=250><br>
+<img src="http://g.recordit.co/s5HO8ogwIf.gif" width=250><br>
 
 ### Notes
 Encountered issues with size constraints of the Movie Grid Cells in the Collection View; the rightmost column gets cut off.
